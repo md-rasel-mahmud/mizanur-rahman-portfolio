@@ -1,0 +1,415 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+/* Local font link  */
+/* ==================================================================== */
+@font-face {
+    font-family: Heading;
+    src: url('../font/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family: Paragraph;
+    src: url('../font/Montserrat-Regular.ttf');
+}
+/* ======================================================================= */
+
+                /* Banner */
+
+.banner-bg{
+    background: url('../images/3496226.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+/* .container{
+    max-width: 90%;
+    margin: 0 auto;
+} */
+nav{
+    background: #303030;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+menu{
+    display: flex;
+    justify-content: space-between;
+}
+.branding img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+menu ul li{
+    display: inline-block;
+    padding: 15px;
+}
+menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Heading;
+    letter-spacing: 1px;
+}
+menu ul li a:hover{
+    color: #e8631c;
+    transition: .9s;
+}
+
+.search-box{
+    padding: 10px;
+}
+.search-box input {
+	padding: 8px;
+	border-radius: 20px;
+	outline: none;
+	background-color: #000;
+	border: none;
+	width: 100px;
+	box-shadow: 0px 0px 5px #6d6868 inset;
+}
+.search-box a{
+    color: #fff;
+    padding: 7px;
+}
+
+    /* Banner Content */
+
+.banner-content{
+    padding: 20% 0;
+
+}
+.banner-content h1{
+    color: #fff;
+    font-family: Heading;
+    font-size: 80px;
+}
+.banner-content p{
+    width: 40%;
+    color: #fff;
+    font-family: paragraph;
+}
+.banner-content button{
+    background-color: #e8631c;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 35px;
+    font-family: paragraph;
+    margin: 20px 0;
+}
+
+             /* Portfolio  */
+
+.portfolio-bg{
+    background: url('../images/shape1.png') no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    background-color: #e8631c;
+    height: 100vh;
+}
+
+.portfolio-bg h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Heading;
+    font-size: 40px;
+    padding-top: 100px;
+    text-shadow: 0 0 10px #000;
+}
+.portfolio-bg p{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: Paragraph;
+    width: 40vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-shadow: 0 0 5px #000;
+}
+
+
+/* Card  */
+.card{
+    background: #303030;
+    margin: 0 40px;
+    cursor: pointer;
+    border-radius: 0;
+}
+.card:hover{
+	box-shadow: 0px 0px 8px #000;
+    transition: all ease-out .1s;
+}
+.card img{  
+    height: 200px;
+}
+.card-title{
+    color: #fff;
+    text-align: center;
+    font-family: Heading;
+    text-transform: uppercase;
+    
+}
+.full-height{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid #fff; */
+    height: 60vh;
+    flex-wrap: wrap;
+    
+}
+
+
+/* services */
+
+.services-bg{
+    background: url('../images/shape2.png') no-repeat;
+    background-position: left bottom;
+    background-size:contain;
+    background-color: #303030;
+    height: 100vh;
+}
+.services-bg h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Heading;
+    font-size: 40px;
+    padding-top: 100px;
+    text-shadow: 0 0 10px #000;
+}
+.services-bg p{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: Paragraph;
+    width: 40vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-shadow: 0 0 5px #000;
+}
+.s-card{
+    background-color: #e8631c;
+    border-radius: 6px;
+}
+
+.s-card .fa-award{
+    font-size: 100px;
+    margin-top: 40px;
+    color: #fff;
+}
+.s-card button{
+    background-color: #303030;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 85px;
+    font-family: Heading;
+    margin: 20px auto;
+    
+}
+
+/* About Area */
+#about{
+    height: 100vh;
+    background: #303030;
+    color: #fff;
+    text-align: center;
+}
+#about h1{
+
+    text-transform: uppercase;
+    font-family: Heading;
+    padding: 100px 0;
+}
+#about p{
+    padding-bottom: 150px;
+}
+.count h1{
+    padding: 0 0 !important;
+    font-family: Paragraph;
+    text-transform: capitalize;
+    
+}
+.count p{
+    text-transform: capitalize;
+    font-family: Paragraph;
+}
+
+.content-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Recent Project  */
+#recent-project{
+    height: 100vh;
+    background: #e8631c;
+    
+}
+.first-project{
+    display: flex;
+    justify-content: space-between;
+}
+.fp-content{
+    width: 40%;
+    color: #fff;
+    padding:  5%;
+}
+.fp-content h1{
+    text-transform: uppercase;
+    font-family: Heading;
+}
+.fp-content p{
+    font-family: Paragraph;
+    width: 70%;
+}
+.fp-content a{
+    background-color: #303030;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px 40px;
+    font-family: paragraph;
+    margin: 20px 0;
+    text-decoration: none;
+}
+.secound-project{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.rp-img1{
+
+    width: 50%;
+}
+.rp-img2{
+
+    width: 50%;
+    
+}
+.rp-img1 img{
+    width: 100%;
+    height: 50vh;
+}
+.rp-img2 img{
+    width: 100%;
+    height: 50vh;
+
+}
+
+/* Contact Area  */
+#contact{
+    background: url('../images/shape3.png');
+    background-position: center center;
+    background-size: cover;
+    background-color: #e8631c;
+
+    
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    padding: 200px 0;
+}
+.contact-form form{
+    
+}
+.contact-form form h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Heading;
+}
+.contact-form form input{
+    padding: 10px 80px;
+    outline: none;
+    border: none;
+    margin: .5px 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.549);
+}
+.contact-form form input[type=submit]{
+    background: #303030;
+    border: none;
+    outline: none;
+    padding: 5px 60px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Heading;
+    letter-spacing: 2px;
+    margin-left: 25% ;
+    margin-top: 5px;
+    
+}
+.contact-form form input[name=Message]{
+    padding: 40px 80px;
+}
+.success{
+    background: #fff;
+    display: none;
+    padding: 10px 30px;
+    color: #000;
+    border-radius: 30px;
+    animation: status .4s ease forwards;
+}
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    70%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+/* Foter Area  */
+#footer{
+    background: #303030;
+    color: #fff;
+    padding: 100px 0;
+}
+.footer-content h2{
+    text-transform: uppercase;
+    font-family: Heading;
+}
+.footer-content a{
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content p{
+    padding-right: 30%;
+    padding-bottom: 10px;
+}
+.social a {
+    padding: 5px 8px;
+    background: #fff;
+    color: #303030;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.fa-facebook-f{
+    padding: 0 2px;
+}
