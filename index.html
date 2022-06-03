@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mizanur Rahman</title>
 
-
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,28 +15,40 @@
                 <!-- Banner  -->
 
     <section class="banner-bg" id="banner">       
-        <nav>
+        <nav class="navbar navbar-expand-lg  fixed-top bg-dark">
             <div class="container">
-                <menu>
-                    <div class="branding">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="#banner">home</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        
-                    </ul>
-                    <div class="search-box">
-                        <input type="search">
-                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        
-                    </div>
-                </menu>          
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" class="img-fluid" alt="">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">services</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="search">
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
             </div>
-        </nav>
+          </nav>
         <div class="banner-content container">
             <h1>Welcome Here</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ex dolorem placeat non animi eligendi!</p>
@@ -52,39 +64,30 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt deserunt dolorum labore, fugiat similique!</p>
         
             <!-- Card  -->
-        <div class="container">
-            <div class="row full-height">
-                <div class="col-sm-4 space">
-                    <div class="card" style="width: 16rem;">
-                        <img src="images/bg (1).jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">first title</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
-
-                        </div>
-                    </div>                   
+        <div class="mb-5">
+            <div class="row p-fix d-flex justify-content-center">
+                <div class="card" style="width: 15rem;">
+                    <img src="images/bg (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div class="col-sm-4 space">
-                    <div class="card" style="width: 16rem;">
-                        <img src="images/bg (2).jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">second project</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                        </div>
-                    </div>                   
+                <div class="card" style="width: 15rem;">
+                    <img src="images/bg (2).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div class="col-sm-4 space">
-                    <div class="card" style="width: 16rem;">
-                        <img src="images/bg (1).jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">third project</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-
-                        </div>
-     
-                    </div>                   
+                <div class="card" style="width: 15rem;">
+                    <img src="images/bg (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+    
             </div>
         </div>
     </div>    
@@ -99,7 +102,7 @@
         
             <!-- Card  -->
         <div class="container">
-            <div class="row full-height">
+            <div class="row">
                 <div class="col-sm-4 space">
                     <div class="card s-card" style="width: 16rem;">
                         <i class="fa-solid fa-award"></i>
@@ -206,15 +209,15 @@
 <section id="contact">
     <div class="container">
         <div class="contact-form">
-            <form class=".form-elements" action="" autocomplete="off" name="google-sheet" method="POST">
+            <form class="form-elements d-flex align-item-center flex-column" action="" autocomplete="off" name="google-sheet" method="POST">
                 
                 <h1>Contact Me</h1><br>
                 
-                <input placeholder="Enter Your Full Name" type="text" name="Name"><br>
-                <input name="Email" type="email" placeholder="Enter Your Email"><br>
-                <input name="PhoneNumber" type="tel" placeholder="Enter Your phone number"><br>
-                <input name="Message" placeholder="Write Discribe" type="text"><br>
-                <input id="submit" target="blank" onclick="show()" type="submit" value="Send">
+                <input placeholder="Enter Your Full Name" type="text" name="Name">
+                <input name="Email" type="email" placeholder="Enter Your Email">
+                <input name="PhoneNumber" type="tel" placeholder="Enter Your phone number">
+                <input name="Message" placeholder="Write Discribe" type="text">
+                <div class="btn"><input id="submit" target="blank" onclick="show()" type="submit" value="Send"></div>
 
                 <br>
                 <p  class="success"> <i class="fas fa-check"></i> Massage sent success</p>
@@ -263,7 +266,7 @@
 </section>
     <script src="js/script.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/s"></script>
+    <script src="js/bootstrap.min.js"></script>
     
 </body>
 </html>

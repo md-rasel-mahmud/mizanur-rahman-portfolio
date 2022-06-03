@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .full-height {
+        width: 100vh;
+    }
+}

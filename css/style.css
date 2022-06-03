@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-
+    /* border: 5px solid red; */
 }
 
 /* Local font link  */
@@ -24,60 +24,38 @@
     background-size: cover;
     height: 100vh;
 }
-/* .container{
-    max-width: 90%;
-    margin: 0 auto;
-} */
-nav{
-    background: #303030;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-}
-menu{
-    display: flex;
-    justify-content: space-between;
-}
-.branding img{
+
+.navbar-brand img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-top: 20%;
 }
-menu ul li{
-    display: inline-block;
-    padding: 15px;
-}
-menu ul li a{
+.nav-link{
     color: #fff;
-    text-decoration: none;
-    text-align: center;
+    font-family: Heading;    
+    letter-spacing: 2px;
     text-transform: capitalize;
-    font-family: Heading;
-    letter-spacing: 1px;
+    font-size: 18px;
 }
-menu ul li a:hover{
-    color: #e8631c;
-    transition: .9s;
+.nav-link:hover{
+    color: #e8631c;  
 }
-
-.search-box{
-    padding: 10px;
-}
-.search-box input {
-	padding: 8px;
-	border-radius: 20px;
-	outline: none;
-	background-color: #000;
-	border: none;
-	width: 100px;
-	box-shadow: 0px 0px 5px #6d6868 inset;
-}
-.search-box a{
+.fa-bars-staggered{
     color: #fff;
-    padding: 7px;
+    border: 2px solid #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
 }
-
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.search a{
+    color: #fff;
+    font-size: 20px;
+}
     /* Banner Content */
 
 .banner-content{
@@ -158,13 +136,15 @@ menu ul li a:hover{
     text-transform: uppercase;
     
 }
+.p-fix{
+    --bs-gutter-x: 0;
+}
 .full-height{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 5px solid #fff; */
     height: 60vh;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     
 }
 
@@ -327,8 +307,9 @@ menu ul li a:hover{
     padding: 200px 0;
 }
 .contact-form form{
-    
+
 }
+
 .contact-form form h1{
     text-align: center;
     color: #fff;
@@ -336,30 +317,33 @@ menu ul li a:hover{
     font-family: Heading;
 }
 .contact-form form input{
-    padding: 10px 80px;
+    padding: 10px 10vw;
     outline: none;
     border: none;
     margin: .5px 0;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.549);
+    text-align: center;
+
+}
+.contact-form form input[name=Message]{
+    padding: 40px 10vh;
+    text-align: center;
 }
 .contact-form form input[type=submit]{
     background: #303030;
     border: none;
     outline: none;
-    padding: 5px 60px;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
     font-family: Heading;
     letter-spacing: 2px;
-    margin-left: 25% ;
+    /* width: 10px; */
     margin-top: 5px;
-    
+    text-align: center;    
 }
-.contact-form form input[name=Message]{
-    padding: 40px 80px;
-}
+
 .success{
     background: #fff;
     display: none;
