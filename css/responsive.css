@@ -1,5 +1,30 @@
-@media (max-width: 768px) {
-    .full-height {
-        width: 100vh;
+@media (max-width: 821px) {
+    .banner-bg{
+        background-position: top right 12%;
+    }
+    .banner-content{
+        align-items: center;
+        justify-content: end;
+        
+    }
+    .banner-content h1{
+        background-color: #303030ec;
+        padding: 10px 15px;
+        color: #fff;
+        border-radius: 20px;
+        letter-spacing: 10px;
+        font-size: 2rem;
+    }
+    .banner-content p{
+        background-color: #303030ce;
+        padding: 5px 15px;
+        color: #fff;
+        border-radius: 15px;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .rp-responsive{
+        flex-direction: column-reverse;
     }
 }

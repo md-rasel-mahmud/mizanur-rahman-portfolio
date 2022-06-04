@@ -59,18 +59,23 @@
     /* Banner Content */
 
 .banner-content{
-    padding: 20% 0;
-
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .banner-content h1{
     color: #000;
     font-family: Heading;
-    font-size: 80px;
+    font-size: 5rem;
 }
 .banner-content p{
     width: 40%;
     color: #303030;
-    font-family: paragraph;
+    font-family: Paragraph;
+    
+
 }
 .banner-content button{
     background-color: #e8631c;
@@ -90,7 +95,7 @@
     background-position: left bottom;
     background-size: contain;
     background-color: #e8631c;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .portfolio-bg h1{
@@ -139,14 +144,6 @@
 .p-fix{
     --bs-gutter-x: 0;
 }
-.full-height{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    flex-wrap: wrap; */
-    
-}
 
 
 /* services */
@@ -156,7 +153,7 @@
     background-position: left bottom;
     background-size:contain;
     background-color: #303030;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .services-bg h1{
     text-align: center;
@@ -178,9 +175,15 @@
     padding: 15px 0;
     text-shadow: 0 0 5px #000;
 }
+
 .s-card{
     background-color: #e8631c;
     border-radius: 6px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
 }
 
 .s-card .fa-award{
@@ -236,18 +239,18 @@
 
 /* Recent Project  */
 #recent-project{
-    height: 100vh;
-    background: #e8631c;
-    
+    /* height: 100vh; */
+    background: #e8631c; 
 }
 .first-project{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .fp-content{
-    width: 40%;
+    width: 80%;
     color: #fff;
-    padding:  5%;
+    text-align: center;
+    height: 60vh;
 }
 .fp-content h1{
     text-transform: uppercase;
@@ -255,7 +258,9 @@
 }
 .fp-content p{
     font-family: Paragraph;
-    width: 70%;
+    /* width: 70%; */
+    text-align: center;
+    padding: 0 10%;
 }
 .fp-content a{
     background-color: #303030;
@@ -268,30 +273,9 @@
     margin: 20px 0;
     text-decoration: none;
 }
-.secound-project{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
+.p-width{
+padding: 0 !important;
 }
-.rp-img1{
-
-    width: 50%;
-}
-.rp-img2{
-
-    width: 50%;
-    
-}
-.rp-img1 img{
-    width: 100%;
-    height: 50vh;
-}
-.rp-img2 img{
-    width: 100%;
-    height: 50vh;
-
-}
-
 /* Contact Area  */
 #contact{
     background: url('../images/shape3.png');
@@ -306,10 +290,6 @@
     justify-content: center;
     padding: 200px 0;
 }
-.contact-form form{
-
-}
-
 .contact-form form h1{
     text-align: center;
     color: #fff;
