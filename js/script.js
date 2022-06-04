@@ -1,4 +1,4 @@
-// Scrole background
+// Scrole background to change navigation background color
 
 window.addEventListener('scroll', function () {
     let header = document.querySelector('nav');
