@@ -1,3 +1,10 @@
+// Scrole background
+
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('nav');
+    header.classList.toggle('scrolling-active', window.scrollY > 0);
+})
+
 
 // Digit counter 
 
@@ -34,7 +41,7 @@ function updated3(){
 }
 
 
-// status 
+//Contact click status 
 
 function show(){
     var show = document.querySelector(".success").style.display = "inline-block";

@@ -1,6 +1,6 @@
 @media (max-width: 821px) {
     .banner-bg{
-        background-position: top right 12%;
+        background-position: top right 18%;
     }
     .banner-content{
         align-items: center;
@@ -26,5 +26,50 @@
     }
     .rp-responsive{
         flex-direction: column-reverse;
+    }
+    .scrolling-active{
+        color: #fff;
+        background: #303030;
+    }
+    .search input{
+        background: #fff;
+        border: none;
+    }
+    .search a {
+        top: 15%;
+    }
+    .scrolling-active .search input{
+        background: #fff;
+        border: none
+    }.scrolling-active .search a{
+        color: #000;
+    }
+    .navbar-toggler-icon{
+        height: auto;
+        width: auto;
+    }
+    nav::before{
+        background: #303030;
+        filter: blur(0);
+    }
+}
+@media(max-width: 768px){
+    .banner-bg {
+        background-position: top right 4%;
+    }
+}
+@media(max-width: 576px){
+    .banner-bg {
+        background-position: top right 10%;
+    }
+}
+@media(max-width: 496px){
+    .banner-bg {
+        background-position: top right 16%;
+    }
+}
+@media(max-width: 360px){
+    .banner-bg {
+        background-position: top right 20%;
     }
 }
